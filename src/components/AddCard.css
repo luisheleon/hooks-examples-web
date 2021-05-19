@@ -1,0 +1,50 @@
+.addcard {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.addCard-items {
+  flex: 0.5;
+}
+
+.addCard-form {
+  padding: 2rem;
+}
+
+.addCard-image img {
+  display: flex;
+  max-width: 450px;
+  margin: auto;
+}
+
+.addCard-image-container {
+  position: relative;
+  color: white;
+}
+
+.addcard-image-bin {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.addcard-image-name {
+  position: absolute;
+  top: 80%;
+  left: 16%;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.addcard-image-cvv {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}

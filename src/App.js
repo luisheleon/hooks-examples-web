@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Navbar, Nav, Form, Button } from "react-bootstrap";
+import AddCard from "./components/AddCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar bg="light" variant="light">
+        <Navbar.Brand href="#home">Novopayment</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="/profile">Perfil</Nav.Link>
+          <Nav.Link href="/addCard">Agregar Tarjeta</Nav.Link>
+        </Nav>
+        <Form inline>
+          <Button variant="outline-danger">Logout</Button>
+        </Form>
+      </Navbar>
+      <Switch>
+        <Route path="/addCard">
+          <AddCard />{" "}
+        </Route>
+        <Route path="/users">{/* <Users /> */}</Route>
+      </Switch>
+    </Router>
   );
 }
 
