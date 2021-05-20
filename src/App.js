@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Navbar bg="light" variant="light">
-        <Navbar.Brand href="#home">Novopayment</Navbar.Brand>
+        <Navbar.Brand href="#home">Bank</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/profile">Perfil</Nav.Link>
           <Nav.Link href="/addCard">Agregar Tarjeta</Nav.Link>
